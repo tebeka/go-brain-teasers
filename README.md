@@ -9,5 +9,5 @@ respect it.
 Enjoy, Miki
 
 ---
-[apl]: https://opensource.org/licenses/Apache-2.0
+[apl2]: https://opensource.org/licenses/Apache-2.0
 [gbt]: FIXME
