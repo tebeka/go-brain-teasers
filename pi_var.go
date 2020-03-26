@@ -21,8 +21,7 @@ import (
 )
 
 func main() {
-	a := 22
-	b := 7.0
+	a, b := 22, 7.0
 	var π = a / b
 	fmt.Println(π)
 }

@@ -16,7 +16,9 @@ limitations under the License.
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func init() {
 	fmt.Printf("A ")

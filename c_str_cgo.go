@@ -34,5 +34,6 @@ func main() {
 	msg := "srsly?"
 	cstr := C.CString(msg)
 	C.show(cstr)
-	C.free(unsafe.Pointer(cstr)) // free memory allocated by C.CString
+	// free memory allocated by C.CString
+	C.free(unsafe.Pointer(cstr))
 }

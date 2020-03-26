@@ -20,21 +20,12 @@ import (
 	"fmt"
 )
 
-type OSError int
-
-func (e *OSError) Error() string {
-	return fmt.Sprintf("error #%d", *e)
-}
-
-func FileExists(path string) (bool, error) {
-	var err *OSError
-	return false, err // TODO
+type Point struct {
+	X int
+	Y int
 }
 
 func main() {
-	if _, err := FileExists("/no/such/file"); err != nil {
-		fmt.Printf("error: %s\n", err)
-	} else {
-		fmt.Println("OK")
-	}
+	p := Point{1, 2}
+	fmt.Printf("%v\n", p) // {1 2}
 }

@@ -31,7 +31,7 @@ func main() {
 	// Float
 	printNum(3.14)   // 3.14 of type float64
 	printNum(.2)     // 0.2 of type float64
-	printNum(1e3)    // 1000 of type float64 <2>
+	printNum(1e3)    // 1000 of type float64 <!--2-->
 	printNum(0x1p-2) // 0.25 of type float64 <3>
 
 	// Complex
