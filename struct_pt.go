@@ -20,6 +20,7 @@ import (
 	"fmt"
 )
 
+// Point is a 2D point
 type Point struct {
 	X int
 	Y int
