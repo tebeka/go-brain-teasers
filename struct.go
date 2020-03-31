@@ -17,19 +17,18 @@ limitations under the License.
 package main
 
 import (
-	"unsafe"
+	"fmt"
+	"time"
 )
 
-/*
-#include <stdio.h>
-
-void show(char *msg) {
-	printf("Go says: %s\n", msg);
+// Log is a log message
+type Log struct {
+	Message string
+	time.Time
 }
-*/
-import "C"
 
 func main() {
-	msg := "srsly?"
-	C.show((*C.char)(unsafe.Pointer(&msg)))
+	ts := time.Date(2009, 11, 10, 0, 0, 0, 0, time.UTC)
+	log := Log{"Hello", ts}
+	fmt.Printf("%v\n", log)
 }
